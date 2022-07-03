@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React from 'react';
+import styled from 'styled-components';
+import ComponentA from './ComponenteA';
+import eyes from './images/aaa.png';
+
+const Container = styled.div`
+
+`
+
+
+const App =() => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Container>
+      <ComponentA icon={eyes} colorIcon={"#fff6e5"}/>
+      <ComponentA icon={eyes} colorIcon={"#ebfcf1"}/>
+      <ComponentA icon={eyes} colorIcon={"#f4f2ff"}/>
+        
+    </Container>
   );
 }
 
